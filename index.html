@@ -7,13 +7,13 @@
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
       :root {
-        --green: #05843d;
-        --green-dark: #004d2a;
-        --lime: #7cc80b;
+        --blue: #0b67c2;
+        --blue-dark: #064a91;
+        --sky: #38bdf8;
         --ink: #14202a;
         --muted: #61707e;
-        --line: #e2e9e5;
-        --page: #f5f8f6;
+        --line: #e2e9f2;
+        --page: #f5f8fc;
         --card: #fff;
       }
       * {
@@ -38,7 +38,7 @@
         align-items: center;
         justify-content: space-between;
         color: #fff;
-        background: linear-gradient(115deg, #00542d, #006c38 55%, #004a29);
+        background: linear-gradient(115deg, #064a91, #0b67c2 55%, #043a72);
         position: relative;
         overflow: hidden;
       }
@@ -67,9 +67,9 @@
         height: 54px;
         display: grid;
         place-items: center;
-        border: 2px solid #8bd916;
+        border: 2px solid #38bdf8;
         border-radius: 13px;
-        box-shadow: inset 0 0 0 6px rgba(139, 217, 22, 0.12);
+        box-shadow: inset 0 0 0 6px rgba(56, 189, 248, 0.12);
         font-size: 29px;
       }
       .brand h1 {
@@ -78,7 +78,7 @@
         letter-spacing: 0.2px;
       }
       .brand h1 span {
-        color: #85d31d;
+        color: #38bdf8;
       }
       .brand p {
         margin: 3px 0 0;
@@ -105,7 +105,7 @@
         border: 1px solid rgba(255, 255, 255, 0.65);
       }
       .download {
-        color: #08743a;
+        color: #0b67c2;
         background: #fff;
         min-width: 182px;
       }
@@ -120,8 +120,8 @@
       .card {
         background: var(--card);
         border-radius: 16px;
-        box-shadow: 0 8px 25px rgba(28, 61, 43, 0.08);
-        border: 1px solid #edf1ee;
+        box-shadow: 0 8px 25px rgba(28, 61, 92, 0.08);
+        border: 1px solid #edf1f7;
       }
       .left-card {
         padding: 28px;
@@ -133,7 +133,7 @@
       }
       .rule {
         height: 1px;
-        background: #e8eeea;
+        background: #e8eef6;
         margin: 29px 0;
       }
       .dropzone {
@@ -141,15 +141,15 @@
         display: grid;
         place-items: center;
         text-align: center;
-        border: 2px dashed #cbd7d0;
+        border: 2px dashed #cbd7e2;
         border-radius: 10px;
-        background: #fcfdfc;
+        background: #fcfdff;
         cursor: pointer;
         padding: 20px;
       }
       .dropzone.drag {
-        border-color: var(--green);
-        background: #f1fff6;
+        border-color: var(--blue);
+        background: #f1f7ff;
       }
       .upload-icon {
         font-size: 47px;
@@ -171,7 +171,7 @@
       .choose {
         margin-top: 18px;
         color: #fff;
-        background: #099247;
+        background: #0b67c2;
       }
       .dropzone small {
         font-size: 12px;
@@ -203,8 +203,8 @@
         border-radius: 20px;
         background: linear-gradient(
           to right,
-          var(--green) 0 var(--value),
-          #dfe5e2 var(--value) 100%
+          var(--blue) 0 var(--value),
+          #dfe5ee var(--value) 100%
         );
         outline: none;
       }
@@ -214,8 +214,8 @@
         height: 23px;
         border-radius: 50%;
         background: #fff;
-        border: 1px solid #c8d2cd;
-        box-shadow: 0 1px 3px #aebbb4;
+        border: 1px solid #c8d2df;
+        box-shadow: 0 1px 3px #aebbc9;
       }
       .value {
         text-align: right;
@@ -226,28 +226,28 @@
         width: 100%;
         margin-top: 28px;
         padding: 15px;
-        color: #087d3b;
-        border: 1px solid #cce7d6;
+        color: #0b67c2;
+        border: 1px solid #cce0f7;
         border-radius: 9px;
-        background: #f8fdf9;
+        background: #f8fbff;
         font: 700 14px inherit;
         cursor: pointer;
       }
       .tips {
         margin-top: 13px;
         padding: 16px;
-        background: #f5fbf7;
-        border: 1px solid #d6ebdc;
+        background: #f5f9ff;
+        border: 1px solid #d6e5f5;
         border-radius: 10px;
         display: flex;
         gap: 12px;
-        color: #58716a;
+        color: #587080;
         font-size: 13px;
         line-height: 1.45;
       }
       .tips b {
         display: block;
-        color: #08813e;
+        color: #0b67c2;
         margin-bottom: 3px;
       }
       .preview-card {
@@ -261,7 +261,7 @@
       }
       .preview-head h2 {
         margin: 0;
-        color: #07823e;
+        color: #0b67c2;
         font-size: 17px;
       }
       .devices {
@@ -271,7 +271,7 @@
       .device {
         width: 47px;
         height: 42px;
-        border: 1px solid #dce5df;
+        border: 1px solid #dce5ec;
         border-radius: 8px;
         background: #fff;
         color: #62717b;
@@ -279,14 +279,14 @@
         cursor: pointer;
       }
       .device.active {
-        border-color: #079247;
-        color: #07853f;
-        background: #f5fff7;
+        border-color: #0b67c2;
+        color: #0b67c2;
+        background: #f5f9ff;
       }
       .canvas-wrap {
         display: grid;
         place-items: center;
-        background: #073f24;
+        background: #062f5c;
         border-radius: 10px;
         overflow: hidden;
       }
@@ -306,7 +306,7 @@
       .preview-bottom .download {
         width: 100%;
         color: #fff;
-        background: var(--green);
+        background: var(--blue);
         font-family: Poppins, ui-sans-serif, sans-serif;
         font-weight: 700;
       }
@@ -326,7 +326,7 @@
         height: 42px;
         border: 0;
         border-radius: 8px;
-        background: #f7f9f8;
+        background: #f7f9fc;
         color: #61717c;
         font-size: 21px;
         cursor: pointer;
@@ -335,14 +335,14 @@
         min-width: 103px;
         padding: 11px;
         text-align: center;
-        border: 1px solid #e2e8e4;
+        border: 1px solid #e2e8f0;
         border-radius: 7px;
         font-size: 14px;
         font-weight: 700;
       }
       .fit {
         padding: 11px 17px;
-        border: 1px solid #dfe7e2;
+        border: 1px solid #dfe7ef;
         border-radius: 8px;
         background: #fff;
         font-weight: 700;
@@ -363,7 +363,7 @@
       }
       .quick {
         min-height: 103px;
-        border: 1px solid #e0e7e3;
+        border: 1px solid #e0e7ef;
         border-radius: 9px;
         background: #fff;
         font: 500 14px inherit;
@@ -371,7 +371,7 @@
       }
       .quick span {
         display: block;
-        color: #058a43;
+        color: #0b67c2;
         font-size: 37px;
         line-height: 1;
         margin-bottom: 12px;
@@ -399,9 +399,9 @@
         display: grid;
         place-items: center;
         flex: none;
-        color: #06833f;
-        background: #f1faf4;
-        border: 1px solid #d9eee0;
+        color: #0b67c2;
+        background: #f1f7ff;
+        border: 1px solid #d9e7f5;
         border-radius: 8px;
         font-size: 20px;
       }
@@ -417,9 +417,9 @@
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 20px;
-        border: 1px solid #dceee2;
+        border: 1px solid #dce7f2;
         border-radius: 12px;
-        background: #f8fdf9;
+        background: #f8fbff;
       }
       .assure {
         display: flex;
@@ -430,7 +430,7 @@
       }
       .assure i {
         font-size: 27px;
-        color: #058a43;
+        color: #0b67c2;
         font-style: normal;
       }
       .assure b {
